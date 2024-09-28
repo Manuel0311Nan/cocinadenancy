@@ -4,7 +4,7 @@
     
     <!-- Contenido de la sección -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center p-5">
-        <h1 class="font-bold mb-4 titleWeb">Cocina de Nancy</h1>
+        <h1 class="font-bold mb-4 titleWeb">Sabores de Nancy</h1>
         <p class="mb-6 subtitleWeb">Una puerta gastronómica a Perú</p>
     </div>
     </div>
@@ -17,7 +17,7 @@
         <div class="flex-1 md:w-64 text-red-700 p-12 lg:p-auto mx-0 my-auto bg-white">
         <h5 class="lg:hidden textTitle">Hola somos</h5>
         <strong>
-            <p class="lg:hidden mb-5 textTitle">Cocina de Nancy</p></strong>
+            <p class="lg:hidden mb-5 textTitle">Sabores de Nancy</p></strong>
         <p class="mb-2 textDescription">La filosofía de la empresa siempre ha sido clara: preservar y compartir el legado de <strong>Nancy Montemayor</strong> con el mundo. Por eso, cada dulce es <strong>Hecho a mano</strong>, utilizando ingredientes locales y sostenibles, manteniendo ese <strong>toque artesanal</strong> que los hace únicos.</p>
         <p class="mb-2 textDescription">La empresa sigue creciendo, pero sin perder su esencia. Seguimos explorando nuevos mercados y creando nuevas combinaciones, siempre respetando las <strong>Recetas tradicionales</strong>.</p>
         <p class="sm:mt-10 textoBienvenida">Bienvenido a nuestra casa</p>
