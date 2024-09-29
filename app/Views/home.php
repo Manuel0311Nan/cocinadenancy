@@ -12,7 +12,7 @@
 <section class="w-full fontParagraph" >
     <div class="relative sm:h-screen flex flex-col sm:flex-row">
     <div class="flex-1 md:w-50 hidden lg:block p-12 lg:p-auto lg:mx-0 lg:my-auto bg-white">
-            <img src="<?= base_url()?>public/images/logo.png" alt="logoDescription">
+            <img src="<?= base_url()?>public/images/sabores.png" alt="logoDescription">
         </div>
         <div class="flex-1 md:w-64 text-red-700 p-12 lg:p-auto mx-0 my-auto bg-white">
         <h5 class="lg:hidden textTitle">Hola somos</h5>
