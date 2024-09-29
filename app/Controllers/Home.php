@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Config\Database;
+
 class Home extends BaseController
 {
     public function __construct()
@@ -24,8 +26,15 @@ class Home extends BaseController
     }
     public function productos()
     {
+        $db = Database::connect();
+        $query = $db->query("SELECT * FROM productos");
+        $resultado = $query->getResult();
+
+        $data = ['titulo' => 'Dulces Peruanos', 'productos' => $resultado];
+        //$data['archivo_js'] = 'novia.js';
+
         echo view('header');
-        echo view('productos');
+        echo view('productos', $data);
         echo view('footer');
     }
 }

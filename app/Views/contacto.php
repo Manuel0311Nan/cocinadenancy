@@ -38,10 +38,6 @@
         
         <p class="text-sm text-gray-500 mb-2">Fecha estimada de vuelta:</p>
         <p class="text-xl font-semibold text-gray-800">3 de Octubre, 2024</p>
-
-        <div class="mt-8">
-            <a href="mailto:contacto@tuempresa.com" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg">Contactar</a>
-        </div>
     </div>
 </section>
 

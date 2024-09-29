@@ -32,16 +32,16 @@
   <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
     <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-red-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-red-700 md:dark:bg-red-700">
       <li>
-        <a href="<?= base_url()?>" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold" aria-current="page">Home</a>
+        <a href="<?= base_url()?>" class="block my-2 p-3 rounded-md transition-all text-white text-2xl hover:bg-slate-100 hover:text-red-700 font-bold" aria-current="page">Home</a>
       </li> 
       <li>
-        <a href="#" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold">Sobre nosotros</a>
+        <a href="#" class="block my-2 p-3 rounded-md transition-all text-white text-2xl hover:bg-slate-100 hover:text-red-700 font-bold">Sobre nosotros</a>
       </li>
       <li>
-        <a href="productos" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold">Productos</a>
+        <a href="productos" class="block my-2 p-3 rounded-md transition-all text-white text-2xl hover:bg-slate-100 hover:text-red-700 font-bold">Productos</a>
       </li>
       <li>
-        <a href="contacto" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold">Contacto</a>
+        <a href="contacto" class="block my-2 p-3 rounded-md transition-all text-white text-2xl hover:bg-slate-100 hover:text-red-700 font-bold">Contacto</a>
       </li>
     </ul>
   </div>
