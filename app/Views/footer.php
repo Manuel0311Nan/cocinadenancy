@@ -2,7 +2,7 @@
 $url = getenv('app.baseURL');
 ?>
         <footer class="bg-red-700 text-white font-bold sticky top-[100vh]">
-        <img src="<?= base_url()?>public/images/logo.png" alt="logofooter" width="150px">
+        <img src="<?= base_url()?>public/images/sabores.png" alt="logofooter" width="150px">
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>

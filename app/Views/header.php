@@ -38,7 +38,7 @@
         <a href="#" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold">Sobre nosotros</a>
       </li>
       <li>
-        <a href="#" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold">Productos</a>
+        <a href="productos" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold">Productos</a>
       </li>
       <li>
         <a href="contacto" class="block my-2 p-3 rounded-md transition-all text-white hover:bg-slate-100 hover:text-red-700 font-bold">Contacto</a>
