@@ -71,5 +71,3 @@ app.baseURL = 'http://localhost/cocina-de-nancy/'
 #--------------------------------------------------------------------
 # SMTP
 #--------------------------------------------------------------------
-# SMTP_USERNAME = 'pruebasweb@littleodin.es'
-# SMTP_PASSWORD = '6!MWZQb&ANeBjfU4EemL@4'
