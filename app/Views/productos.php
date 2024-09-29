@@ -1,4 +1,4 @@
-<section class="py-12 bg-gray-100">
+<section class="py-12 bg-gray-100 min-h-screen">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
         

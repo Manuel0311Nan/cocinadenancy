@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to CodeIgniter 4!</title>
+    <title>Sabores de Perú</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
@@ -19,7 +19,7 @@
 <header class="bg-red-700">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="<?= base_url()?>" class="flex items-center space-x-3 rtl:space-x-reverse">
-    <img src="<?= base_url()?>public/images/sabores.png" alt="logo" width="200px">
+    <img src="<?= base_url()?>public/images/saboresPeru.png" alt="logo" width="200px">
   </a>
   <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-white-800 dark:hover:text-red-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
