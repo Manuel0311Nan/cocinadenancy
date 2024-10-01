@@ -2,19 +2,33 @@
 
 namespace App\Controllers;
 
-use App\Models\ProductoModel;  // Asegúrate de tener un modelo para los productos
+use App\Models\ProductoModel;
+use App\Models\OpcionesCompraModel;
+use CodeIgniter\Controller;
 
-class ProductosController extends BaseController
+class ProductosController extends Controller
 {
-    public function detalle($id)
+    public function obtenerDetallesProducto($idProducto)
     {
-        $model = new ProductoModel();
-        $data['producto'] = $model->where('id', $id)->orWhere('slug', $id)->first();
+        $modelProducto = new ProductoModel(); 
+        $modelOpciones = new OpcionesCompraModel();
 
-        if (empty($data['producto'])) {
+        // Obtener los detalles del producto
+        $producto = $modelProducto->find($idProducto);
+
+        // Si el producto no existe, retornar un error
+        if (!$producto) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
         }
 
-        return view('detalle_producto', $data);
+        // Obtener las opciones de compra asociadas al producto
+        $opciones = $modelOpciones->where('producto_id', $idProducto)->findAll();
+
+        echo view('header');
+        echo view('detalle_producto', [
+            'producto' => $producto,
+            'opciones_compra' => $opciones
+        ]);
+        //echo view('footer');
     }
 }
