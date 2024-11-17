@@ -37,7 +37,7 @@
         <p class="text-lg text-gray-600 mb-6">Estamos trabajando para mejorar tu experiencia. Volveremos pronto. Gracias por tu paciencia.</p>
         
         <p class="text-sm text-gray-500 mb-2">Fecha estimada de vuelta:</p>
-        <p class="text-xl font-semibold text-gray-800">3 de Octubre, 2024</p>
+        <p class="text-xl font-semibold text-gray-800">3 de Diciembre, 2024</p>
     </div>
 </section>
 

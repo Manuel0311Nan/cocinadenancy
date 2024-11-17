@@ -141,6 +141,12 @@ header .heroe h2 {
     stroke: #000;
     stroke-width: 32px;
 }
+.imageProductsOne{
+    background-image: url("https://res.cloudinary.com/de3ujeyub/image/upload/v1731846686/IMG_20241026_130247_hcokgv.jpg");
+}
+.imageProductsTwo{
+    background-image: url("https://res.cloudinary.com/de3ujeyub/image/upload/v1731846688/IMG_20241026_132138_wstgfd.jpg"); 
+}
 footer {
     background-color: rgba(221, 72, 20, .8);
     text-align: center;
@@ -154,7 +160,7 @@ footer .copyrights {
     color: rgba(200, 200, 200, 1);
     padding: .25rem 1.75rem;
 }
-@media (max-width: 738px) {
+@media (max-width: 541px) {
     header ul {
         padding: 0;
     }
@@ -184,8 +190,20 @@ footer .copyrights {
         font-size: 2rem; /* 36px */
         line-height: 2.25rem;
     }
+    .imageProductsOne{
+        background-image: none;
+        background-color:#c53030;
+        color: white;
+        padding: 10px;
+    }
+    .imageProductsTwo{
+        background-image: none;
+        background-color:#c53030;
+        color: white;
+        padding: 10px;
+    }
 }
-@media (min-width: 739px) and (max-width: 889px) {
+@media (min-width: 540px) and (max-width: 889px) {
 
     .titleWeb{
         font-family: var(--primary-font);
@@ -196,12 +214,24 @@ footer .copyrights {
         font-size:80px;
     }
     .textDescription, .textTitle{
-        font-size: 1.5rem; /* 36px */
+        font-size: 1.2rem; /* 36px */
         line-height: 2.25rem;
     }
     .textoBienvenida{
         font-size: 2rem; /* 36px */
         line-height: 2.25rem;
+    }
+    .imageProductsOne{
+        background-image: none;
+        background-color:#c53030;
+        color: white;
+        padding: 10px;
+    }
+    .imageProductsTwo{
+        background-image: none;
+        background-color:#c53030;
+        color: white;
+        padding: 10px;
     }
 }
 @media (min-width: 890px) and (max-width: 1200px) {
