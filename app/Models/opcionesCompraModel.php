@@ -8,5 +8,5 @@ class OpcionesCompraModel extends Model
 {
     protected $table = 'opciones_compra';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['producto_id', 'cantidad', 'precio'];
+    protected $allowedFields = ['producto_id', 'cantidad','tamaño','precio'];
 }

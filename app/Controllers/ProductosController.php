@@ -13,15 +13,12 @@ class ProductosController extends Controller
         $modelProducto = new ProductoModel(); 
         $modelOpciones = new OpcionesCompraModel();
 
-        // Obtener los detalles del producto
         $producto = $modelProducto->find($idProducto);
 
-        // Si el producto no existe, retornar un error
         if (!$producto) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
         }
 
-        // Obtener las opciones de compra asociadas al producto
         $opciones = $modelOpciones->where('producto_id', $idProducto)->findAll();
 
         echo view('header');
@@ -29,6 +26,6 @@ class ProductosController extends Controller
             'producto' => $producto,
             'opciones_compra' => $opciones
         ]);
-        //echo view('footer');
+        echo view('footer');
     }
 }
