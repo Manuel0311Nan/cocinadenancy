@@ -24,6 +24,12 @@ class Home extends BaseController
         echo view('contacto');
         echo view('footer');
     }
+    public function nosotros()
+    {
+        echo view('header');
+        echo view('nosotros');
+        echo view('footer');
+    }
     public function productos()
     {
         $db = Database::connect();
