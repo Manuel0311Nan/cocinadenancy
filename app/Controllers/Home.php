@@ -31,7 +31,6 @@ class Home extends BaseController
         $resultado = $query->getResult();
 
         $data = ['titulo' => 'Dulces Peruanos', 'productos' => $resultado];
-        //$data['archivo_js'] = 'novia.js';
 
         echo view('header');
         echo view('productos', $data);

@@ -5,7 +5,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <?php foreach ($productos as $producto): ?>
         <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
-                <img class="w-full h-48 object-cover" src="<?= base_url('public/images/' . $producto->imagen) ?>.jpg" alt="<?= esc($producto->slug) ?>">
+                <img class="w-full h-48 object-cover" src="<?=('https://res.cloudinary.com/de3ujeyub/image/upload/v1731846686/' .$producto->imagen) ?>.jpg" alt="<?= esc($producto->slug) ?>">
                 <div class="flex-grow p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-semibold mb-2"><?= esc($producto->nombre) ?></h3>
