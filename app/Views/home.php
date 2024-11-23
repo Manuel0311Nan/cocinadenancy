@@ -32,7 +32,7 @@
             <div class="lg:absolute bottom-0 left-0 w-full p-6 sm:text-white z-10">
                 <h5 class="sm:text-3xl font-bold mb-2">Entra y descubre nuestros productos</h5>
                 <p class="mb-4 sm:text-2xl">Dulces caseros para ocasiones espciales</p>
-                <a href="productos" class="bg-red-600 hover:bg-red-700 text-white sm:text-2xl font-semibold py-2 px-4 rounded-lg">Ver Productos</a>
+                <a href="productos" class="bg-slate-50 hover:bg-white-700 text-red-700 lg:bg-red-600 lg:hover:bg-red-700 lg:text-white sm:text-2xl font-semibold py-2 px-4 rounded-lg">Ver Productos</a>
             </div>
         </div>
         <div class="flex-1 bg-contain sm:bg-cover bg-center relative imageProductsTwo">
@@ -40,7 +40,7 @@
             <div class="lg:absolute bottom-0 left-0 w-full p-6 sm:text-white z-10">
                 <h5 class="sm:text-3xl font-bold mb-2">¿Prefieres enviarnos tu idea?</h5>
                 <p class="mb-4 sm:text-2xl">Contáctanos y te responderemos lo antes posible</p>
-                <a href="contacto" class="bg-red-600 hover:bg-red-700 text-white sm:text-2xl font-semibold py-2 px-4 rounded-lg">Contacto</a>
+                <a href="contacto" class="bg-slate-50 hover:bg-white-700 text-red-700 lg:bg-red-600 lg:hover:bg-red-700 lg:text-white sm:text-2xl font-semibold py-2 px-4 rounded-lg">Contacto</a>
             </div>
         </div>
     </div>

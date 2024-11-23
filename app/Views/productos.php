@@ -6,9 +6,9 @@
         <?php foreach ($productos as $producto): ?>
         <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
             <?php if($producto ->imagen == ''){?>
-                <img class="w-full h-48" src="https://res.cloudinary.com/de3ujeyub/image/upload/v1731863235/saboresPeru_lbmhod.png" alt="productoPor Defecto">
+                <img class="w-full h-56" src="https://res.cloudinary.com/de3ujeyub/image/upload/v1731863235/saboresPeru_lbmhod.png" alt="productoPor Defecto">
             <?php }else{?>
-                <img class="w-full h-48 object-cover" src="<?=('https://res.cloudinary.com/de3ujeyub/image/upload/v1731846686/' .$producto->imagen) ?>.jpg" alt="<?= esc($producto->slug) ?>">
+                <img class="w-full h-56 object-cover" src="<?=('https://res.cloudinary.com/de3ujeyub/image/upload/v1731846686/' .$producto->imagen) ?>.jpg" alt="<?= esc($producto->slug) ?>">
             <?php } ?>
                 <div class="flex-grow p-6 flex flex-col justify-between">
                     <div>
