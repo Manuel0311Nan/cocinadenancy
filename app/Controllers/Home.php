@@ -12,8 +12,12 @@ class Home extends BaseController
     }
     public function index()
     {
+        $db = Database::connect();
+        $query = $db->query("SELECT * FROM galeria");
+        $resultado = $query->getResult();
+
         echo view('header');
-        $data = ['titulo' => 'Cocina de Nancy'];
+        $data = ['titulo' => 'Cocina de Nancy', 'galeria' => $resultado];
         $data['archivo_js'] = 'navbar.js';
         echo view('home', $data);
         echo view('footer');
@@ -26,8 +30,14 @@ class Home extends BaseController
     }
     public function nosotros()
     {
+        $db = Database::connect();
+        $query = $db->query("SELECT * FROM galeria");
+        $resultado = $query->getResult();
+
+        $data = ['titulo' => 'Galeria de productos', 'galeria' => $resultado];
+
         echo view('header');
-        echo view('nosotros');
+        echo view('nosotros', $data);
         echo view('footer');
     }
     public function productos()
