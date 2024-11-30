@@ -18,7 +18,6 @@ class Home extends BaseController
 
         echo view('header');
         $data = ['titulo' => 'Cocina de Nancy', 'galeria' => $resultado];
-        $data['archivo_js'] = 'navbar.js';
         echo view('home', $data);
         echo view('footer');
     }

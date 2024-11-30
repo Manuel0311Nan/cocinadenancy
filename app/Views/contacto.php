@@ -1,7 +1,7 @@
 <div class="container mx-auto p-8">
     <h1 class="text-4xl font-bold text-gray-900 mb-8">Contacto</h1>
 
-    <form action="<?= base_url('contacto/enviar') ?>" method="POST">
+    <form action="<?= base_url('/envioForm') ?>" method="POST">
         <div class="mb-4">
             <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">

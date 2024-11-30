@@ -10,7 +10,7 @@ class Contacto extends BaseController
 {
     public function __construct()
     {
-        helper('url');
+        helper(['url']);
     }
 
     public function redirect($uri)
@@ -20,43 +20,47 @@ class Contacto extends BaseController
 
     public function send()
     {
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                $name = isset($_POST['name']) ? $_POST['name'] : 'Nombre no proporcionado';
-                $phone = isset($_POST['phone']) ? $_POST['phone'] : 'Teléfono no proporcionado';
-                $email = isset($_POST['email']) ? $_POST['email'] : 'Email no proporcionado';
-                $message = isset($_POST['message']) ? $_POST['message'] : 'Mensaje no proporcionado';
-    
-                $mail = new PHPMailer(true);
-    
-                try {
-                    $mail->isSMTP();
-                    $mail->SMTPDebug = 2;
-                    $mail->Host = 'smtp.hostinger.com';
-                    $mail->SMTPAuth = true;
-                    $mail->Username = getenv('SMTP_USERNAME');
-                    $mail->Password = getenv('SMTP_PASSWORD');
-                    $mail->SMTPSecure = 'ssl';
-                    $mail->Port = 465;
-    
-                    // Destinatarios
-                    $mail->setFrom('pruebasweb@littleodin.es', 'Formulario de contacto');
-                    $mail->addAddress('pruebasweb@littleodin.es', 'Nancy');
-                    $mail->addReplyTo($email, $name);
+        error_log(print_r($this->request->getPost(), true));
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $name = $this->request->getPost('name') ?: 'Nombre no proporcionado';
+            $phone = $this->request->getPost('phone') ?: 'Teléfono no proporcionado';
+            $email = $this->request->getPost('email') ?: 'Email no proporcionado';
+            
+            log_message('info', "Datos recibidos: Nombre: $name, Teléfono: $phone, Email: $email");
 
-    
-                    // Contenido
-                    $mail->isHTML(true);
-                    $mail->Subject = 'Consulta para nuevo pedido';
-                    $mail->Body    = "Nombre: {$name}<br>Tel&eacute;fono: {$phone}<br>Email: {$email}}<br>Mensaje: {$message}";
-                    $mail->AltBody = "Nombre: {$name}\nTel&eacute;fono: {$phone}\nEmail: {$email}\nMensaje: {$message}"; 
-    
-                    $mail->send();
-                    return redirect()->to(base_url());
-                } catch (Exception $e) {
-                    echo 'El mensaje no se pudo enviar. Error: ' . $mail->ErrorInfo;
-                }
-            } else {
-                echo 'Método no permitido';
+            $mail = new PHPMailer(true);
+
+            try {
+                $mail->isSMTP();
+                $mail->SMTPDebug = 2; // Cambia a 2 si necesitas depuración detallada
+                $mail->Host = 'smtp.hostinger.com';
+                $mail->SMTPAuth = true;
+                $mail->Username = getenv('SMTP_USERNAME');
+                $mail->Password = getenv('SMTP_PASSWORD');
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Mejora: Utiliza constante de PHPMailer
+                $mail->Port = 465;
+                
+                // Destinatarios
+                $mail->setFrom('contacto@saboresdeperu.es', 'Formulario de contacto');
+                $mail->addAddress('contacto@saboresdeperu.es', 'Nancy');
+                $mail->addReplyTo($email, $name);
+
+                // Contenido
+                $mail->isHTML(true);
+                $mail->Subject = 'Consulta para nuevo pedido';
+                $mail->Body = "Nombre: {$name}<br>Tel&eacute;fono: {$phone}<br>Email: {$email}";
+                $mail->AltBody = "Nombre: {$name}\nTeléfono: {$phone}\nEmail: {$email}";
+                
+
+                $mail->send();
+                log_message('info', 'Correo enviado con éxito.');
+                return redirect()->to(base_url("Contacto"));
+            } catch (Exception $e) {
+                log_message('error', 'Error al enviar el correo: ' . $mail->ErrorInfo);
+                return redirect()->to(base_url())->with('error', 'El mensaje no se pudo enviar. Error: ' . $mail->ErrorInfo);
             }
+        } else {
+            echo 'Método no permitido';
+        }
     }
 }
