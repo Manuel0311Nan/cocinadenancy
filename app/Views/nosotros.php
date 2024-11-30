@@ -1,11 +1,14 @@
-<section class="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-    <div class="text-center p-8 bg-white shadow-lg rounded-lg">
-        <img src="<?= base_url()?>public/images/saboresPeru.png" alt="Logo" class="mx-auto mb-6 w-96 h-32 object-cover">
-        
-        <h1 class="text-4xl font-bold text-red-600 mb-4">Página en Mantenimiento</h1>
-        <p class="text-lg text-gray-600 mb-6">Estamos trabajando para mejorar tu experiencia. Volveremos pronto. Gracias por tu paciencia.</p>
-        
-        <p class="text-sm text-gray-500 mb-2">Fecha estimada de vuelta:</p>
-        <p class="text-xl font-semibold text-gray-800">3 de Diciembre, 2024</p>
-    </div>
+<section class="m-5">
+<h2 class="text-3xl text-red-700 font-bold text-center mb-8 fontParagraph">Trabajos terminados</h2>
+<div class="fontParagraph">
+    <div></div>
+    <p class="textDescription text-red-700 lg:p-auto mx-0 my-auto text-center">Ofrecemos personalización completa de las tartas, tanto de color como de forma</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-3">
+    <?php foreach ($galeria as $dulce): ?>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden m-4 md:m-1">
+        <img class="w-full object-cover" src="<?=($dulce->Imagen) ?>" alt="<?=($dulce->Nombre) ?>"">
+        </div>
+    <?php endforeach; ?>
+</div>
 </section>
