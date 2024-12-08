@@ -35,7 +35,7 @@
 
                 </div>
                 <div>
-                <button class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg">
+                <button class="w-full bg-red-800 hover:bg-red-700 text-white font-semibold mt-5 py-2 px-4 rounded-lg">
                     <a href="<?= base_url('productos') ?>"> Volver a productos</a>
                 </button>
             </div>
