@@ -41,7 +41,7 @@
         <a href="<?= base_url('nosotros') ?>" class="block my-2 p-2 rounded-md transition-all text-2xl hover:bg-red-700 hover:text-white text-red-700 font-bold text-center">Galeria</a>
       </li>
       <li>
-        <a href="<?= base_url('contacto') ?>" class="block my-2 mx-1 p-2 rounded-md transition-all text-2xl hover:bg-red-700 hover:text-white text-red-700 font-bold text-center">Contacto</a>
+        <a href="<?= base_url('contacto') ?>" class="block my-2 mx-1 p-2 rounded-md transition-all text-2xl hover:bg-red-700 hover:text-white text-red-700 font-bold text-center">Carrito</a>
       </li>
     </ul>
   </div>
