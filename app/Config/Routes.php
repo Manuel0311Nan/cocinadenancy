@@ -14,3 +14,5 @@ $routes->get('/producto/(:segment)', 'ProductosController::obtenerDetallesProduc
 $routes->post('/carrito/agregar', 'CarritoController::agregarAlCarrito');
 $routes->get('/contacto', 'CarritoController::verCarrito');
 $routes->post('carrito/eliminar', 'CarritoController::eliminarDelCarrito');
+$routes->get('/carrito/cantidad', 'CarritoController::cantidadCarrito');
+

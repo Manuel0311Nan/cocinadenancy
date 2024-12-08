@@ -75,4 +75,15 @@ class CarritoController extends Controller
 
         return $this->response->setJSON(['success' => true]);
     }
+    public function cantidadCarrito()
+    {
+        $session = session();
+        $carrito = $session->get('carrito') ?? [];
+    
+        // La cantidad total será el número de elementos en el carrito
+        $cantidadTotal = count($carrito);
+    
+        return $this->response->setJSON(['cantidad' => $cantidadTotal]);
+    }
+
 }

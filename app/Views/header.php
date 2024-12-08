@@ -41,7 +41,11 @@
         <a href="<?= base_url('nosotros') ?>" class="block my-2 p-2 rounded-md transition-all text-2xl hover:bg-red-700 hover:text-white text-red-700 font-bold text-center">Galeria</a>
       </li>
       <li>
-        <a href="<?= base_url('contacto') ?>" class="block my-2 mx-1 p-2 rounded-md transition-all text-2xl hover:bg-red-700 hover:text-white text-red-700 font-bold text-center">Carrito</a>
+        <a href="<?= base_url('contacto') ?>" class="block my-2 mx-1 p-2 rounded-md transition-all text-2xl hover:bg-red-700 hover:text-white text-red-700 font-bold text-center">Carrito
+        <span id="carritoCantidad" class=" fixed-top bg-red-600 text-white text-xs font-bold rounded-full px-2 py-1">
+                0
+            </span>
+        </a>
       </li>
     </ul>
   </div>
