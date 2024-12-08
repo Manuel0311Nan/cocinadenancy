@@ -35,6 +35,7 @@ class CarritoController extends Controller
         if ($producto) {
             $carrito[] = [
                 'id' => $idProducto,
+                'nombre' => $producto['nombre'],
                 'cantidad' => $cantidad,
                 'tamaño' => $producto['tamaño'],
                 'precio' => $producto['precio']
