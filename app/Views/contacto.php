@@ -3,7 +3,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 ">
     <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
         <div class="flex">
-            <p>Teléfono para hacer pedidos:<br> <span class="text-red-700 font-bold">600000000</span> </p>
+            <p>Teléfono para hacer pedidos:<br> <span class="text-red-700 font-bold">674106458</span></p>
         </div>
     </div>
     <div class="overflow-x-auto">
